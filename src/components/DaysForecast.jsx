@@ -1,7 +1,7 @@
 import React from "react";
 import { daysOfWeek } from "../utils/dateData";
 
-export default function DaysForecast({ data }) {
+export default function DaysForecast({ data, tempUnit }) {
   return (
     <div>
       <p className="days-card__caption">10 Day Forecast</p>
@@ -19,8 +19,13 @@ export default function DaysForecast({ data }) {
               />
               <div>{dayName}</div>
               <div className="min-maxtemp">
-                <span>{day.day.mintemp_c}&deg;</span> -{" "}
-                <span>{day.day.maxtemp_c}&deg;</span>
+                <span>
+                  {tempUnit > 0 ? day.day.mintemp_f : day.day.mintemp_c}&deg;
+                </span>{" "}
+                -{" "}
+                <span>
+                  {tempUnit > 0 ? day.day.maxtemp_f : day.day.maxtemp_c}&deg;
+                </span>
               </div>
             </div>
           );

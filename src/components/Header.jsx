@@ -3,13 +3,24 @@ import { HiSearch } from "react-icons/hi";
 import { SlLocationPin } from "react-icons/sl";
 import "./header.css";
 
-export default function Header({ input, options, handleSelect, handleChange }) {
+export default function Header({
+  input,
+  options,
+  handleSelect,
+  handleChange,
+  tempUnit,
+  setTempUnit,
+}) {
   const [isFocused, setIsFocused] = useState(false);
 
   function handleFocus() {
     setTimeout(() => {
       setIsFocused((prev) => !prev);
     }, 200);
+  }
+
+  function handleTempChange() {
+    setTempUnit((prev) => (prev === 1 ? 0 : 1));
   }
 
   return (
@@ -54,6 +65,9 @@ export default function Header({ input, options, handleSelect, handleChange }) {
           </div>
         )}
       </div>
+      <span className="selected-temp" onClick={handleTempChange}>
+        &deg;{tempUnit > 0 ? "F" : "C"}
+      </span>
     </div>
   );
 }

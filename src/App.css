@@ -1,11 +1,9 @@
 .current-condition {
-  /* border: 1px solid #000; */
   display: flex;
   padding: 20px 10px;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  /* border-bottom: 1px solid #000; */
   box-shadow: 0 0 10px 0 #00000050;
   border-radius: 10px;
 }
@@ -45,6 +43,13 @@
   margin-bottom: 10px;
 }
 
+.hours-card__item {
+  background-color: var(--secondary-color);
+  text-align: center;
+  border-radius: 30px;
+  padding: 20px 25px;
+}
+
 @media screen and (min-width: 1280px) {
   .current-condition {
     box-shadow: 0 0 10px 0 #00000050;
@@ -52,16 +57,15 @@
   }
 
   .hours-card__container {
+    gap: 10px;
+    padding: 20px;
     flex-wrap: wrap;
     overflow: unset;
   }
-}
 
-.hours-card__item {
-  background-color: var(--secondary-color);
-  text-align: center;
-  border-radius: 30px;
-  padding: 20px 25px;
+  .hours-card__item {
+    padding: 15px 20px;
+  }
 }
 
 .days-card__caption {
@@ -94,6 +98,11 @@
 @media screen and (min-width: 1280px) {
   .days-card__item {
     padding: 0 40px;
+  }
+
+  .days-card__container {
+    overflow: unset;
+    max-height: unset;
   }
 }
 
@@ -129,6 +138,10 @@
   font-size: 2.5rem;
 }
 
+.unit {
+  font-size: 1.4rem;
+}
+
 .icon__highlights {
   font-size: 3.5rem;
 }
@@ -158,7 +171,7 @@ main > * {
     max-width: 1280px;
     display: grid;
     grid-template-columns: 500px 1fr;
-    grid-template-rows: 30% 1fr;
+    grid-template-rows: inherit 1fr;
   }
 
   .current-condition {

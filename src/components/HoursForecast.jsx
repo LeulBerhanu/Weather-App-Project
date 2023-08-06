@@ -1,7 +1,7 @@
 import React from "react";
 import { currentHours, fullDate } from "../utils/dateData";
 
-export default function HoursForecast({ data }) {
+export default function HoursForecast({ data, tempUnit }) {
   const hourData = data.forecast.forecastday[0].hour.slice(currentHours);
 
   return (
@@ -22,7 +22,7 @@ export default function HoursForecast({ data }) {
                 src={hour.condition.icon}
                 alt={hour.condition.text}
               />
-              <div>{hour.temp_c}&deg;c</div>
+              <div>{tempUnit > 0 ? hour.temp_f : hour.temp_c}&deg;</div>
             </div>
           );
         })}

@@ -2,8 +2,20 @@
   display: flex;
   position: absolute;
   justify-content: center;
+  align-items: center;
   padding: 20px 0;
   width: 100%;
+}
+
+.selected-temp {
+  font-weight: 600;
+  font-size: 3rem;
+  margin-left: 30px;
+}
+
+.selected-temp:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 #search-bar__wrapper {
@@ -40,13 +52,11 @@
 }
 
 #dropdown {
-  /* border: 1px solid red; */
   width: 100%;
   font-size: 2rem;
 }
 
 #dropdown__option {
-  /* overflow: hidden; */
   margin: 0 15px;
   padding: 10px 0;
   cursor: pointer;
@@ -71,7 +81,6 @@
 }
 
 .option__city {
-  /* border: 1px dashed blue; */
   max-width: 230px;
 }
 
@@ -86,7 +95,6 @@
 
 .profile-link > a {
   margin-left: 10px;
-  /* vertical-align: middle; */
 }
 
 .profile-link {

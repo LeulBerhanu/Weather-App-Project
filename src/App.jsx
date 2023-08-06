@@ -16,6 +16,7 @@ function App() {
   const [selected, setSelected] = useState("London");
 
   const [loading, setLoading] = useState(false);
+  const [tempUnit, setTempUnit] = useState(0);
 
   const searchUrl = `http://api.weatherapi.com/v1/search.json?key=ea2daf8cd8b6496fb3184425233107&q=${input}`;
   const url = `http://api.weatherapi.com/v1/forecast.json?key=ea2daf8cd8b6496fb3184425233107&q=${selected}&days=10&aqi=no`;
@@ -74,13 +75,15 @@ function App() {
           handleSelect={handleSelect}
           handleChange={handleChange}
           loading={loading}
+          tempUnit={tempUnit}
+          setTempUnit={setTempUnit}
         />
       </header>
       <main>
-        <CurrentCondition data={data} />
-        <CurrentConditionDetails data={data} />
-        <HoursForecast data={data} />
-        <DaysForecast data={data} />
+        <CurrentCondition data={data} tempUnit={tempUnit} />
+        <CurrentConditionDetails data={data} tempUnit={tempUnit} />
+        <HoursForecast data={data} tempUnit={tempUnit} />
+        <DaysForecast data={data} tempUnit={tempUnit} />
       </main>
       <footer>
         <p>Developed by: Leul Berhanu</p>
