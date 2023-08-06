@@ -2,7 +2,7 @@
   display: flex;
   padding: 20px 10px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 30px;
   box-shadow: 0 0 10px 0 #00000050;
   border-radius: 10px;
@@ -129,16 +129,16 @@
 }
 
 .current-condition-details {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .current-condition-details > div {
   background-color: var(--secondary-color);
   padding: 20px;
   border-radius: 20px;
-  margin: 10px 0;
+  margin: 10px;
   text-align: center;
 }
 
@@ -146,6 +146,14 @@
   display: flex;
   justify-content: space-around;
   font-size: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .current-condition-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .unit {
@@ -161,7 +169,7 @@ main {
   max-width: 480px;
   display: flex;
   flex-direction: column;
-  padding: 100px 10px;
+  padding: 100px 0;
   padding-bottom: 40px;
   gap: 20px;
 }
