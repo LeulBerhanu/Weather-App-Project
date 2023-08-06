@@ -169,7 +169,7 @@ main {
   max-width: 480px;
   display: flex;
   flex-direction: column;
-  padding: 100px 0;
+  padding: 100px 10px;
   padding-bottom: 40px;
   gap: 20px;
 }
