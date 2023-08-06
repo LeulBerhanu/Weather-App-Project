@@ -18,5 +18,5 @@
 ## Contact Information
 
 Developer: Leul Berhanu
-LinkedIn: [LinkedIn](https://www.linkedin.com/in/leul-berhanu)
-Telegram: [Telegram](https://t.me/preence26)
+[LinkedIn](https://www.linkedin.com/in/leul-berhanu)
+[Telegram](https://t.me/preence26)
