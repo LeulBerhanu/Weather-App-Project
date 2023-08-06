@@ -13,7 +13,7 @@ function App() {
   const [input, setInput] = useState("");
 
   const [options, setOptions] = useState([]);
-  const [selected, setSelected] = useState("London");
+  const [selected, setSelected] = useState("Addis Abeba");
 
   const [loading, setLoading] = useState(false);
   const [tempUnit, setTempUnit] = useState(0);
