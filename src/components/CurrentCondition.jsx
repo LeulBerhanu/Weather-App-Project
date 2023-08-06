@@ -1,3 +1,6 @@
+import { AiOutlineCalendar } from "react-icons/ai";
+import { fullDate } from "../utils/dateData";
+
 export default function CurrentCondition({ data, tempUnit }) {
   return (
     <div className="current-condition">
@@ -18,6 +21,10 @@ export default function CurrentCondition({ data, tempUnit }) {
         />
         <p className="condition-text">{data.current.condition.text}</p>
       </div>
+      <p className="calendar">
+        <AiOutlineCalendar />
+        {fullDate}
+      </p>
     </div>
   );
 }
