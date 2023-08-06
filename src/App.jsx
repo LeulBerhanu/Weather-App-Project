@@ -21,8 +21,6 @@ function App() {
   const searchUrl = `https://api.weatherapi.com/v1/search.json?key=ea2daf8cd8b6496fb3184425233107&q=${input}`;
   const url = `https://api.weatherapi.com/v1/forecast.json?key=ea2daf8cd8b6496fb3184425233107&q=${selected}&days=10&aqi=no`;
 
-  console.log(data);
-
   useEffect(() => {
     setLoading(true);
     fetchData(url, (data) => {
