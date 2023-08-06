@@ -1,5 +1,5 @@
 import React from "react";
-import { currentHours, fullDate } from "../utils/dateData";
+import { currentHours } from "../utils/dateData";
 
 export default function HoursForecast({ data, tempUnit }) {
   const hourData = data.forecast.forecastday[0].hour.slice(currentHours);

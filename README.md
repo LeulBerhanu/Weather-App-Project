@@ -6,7 +6,11 @@
 
 - I developed this app for my SYNC Intern's internship program project.
 
-## Demo
+## Screenshots
+
+![Wide screen](./src/screenshots/wider%20screen%20view.png)
+![Tablet screen](./src/screenshots/tablet%20view.png)
+![Mobile screen](./src/screenshots/mobile%20view.png)
 
 ## Technologies Used
 
