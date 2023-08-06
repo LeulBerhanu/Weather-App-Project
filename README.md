@@ -2,7 +2,7 @@
 
 ## Description
 
-- It is a weather forcasting app that uses the WeatherAPI.com API to retrieve current and future weather data. It shows the current temperature, humidity, wind speed, and visibility of any city in the world. It also provides an option to search cities by name. The user can see 10 day /remaining hours of the day forecasts as well.
+- It is a weather forcasting app that uses the WeatherAPI.com API to retrieve current and future weather data. It shows the current temperature, humidity, wind speed, and visibility of any city in the world. It also provides an option to search cities by name. The user can see 10 days, and remaining hours of the day forecasts as well.
 
 - I developed this app for my SYNC Intern's internship program project.
 

@@ -18,8 +18,8 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [tempUnit, setTempUnit] = useState(0);
 
-  const searchUrl = `http://api.weatherapi.com/v1/search.json?key=ea2daf8cd8b6496fb3184425233107&q=${input}`;
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=ea2daf8cd8b6496fb3184425233107&q=${selected}&days=10&aqi=no`;
+  const searchUrl = `https://api.weatherapi.com/v1/search.json?key=ea2daf8cd8b6496fb3184425233107&q=${input}`;
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=ea2daf8cd8b6496fb3184425233107&q=${selected}&days=10&aqi=no`;
 
   console.log(data);
 

@@ -14,7 +14,7 @@
 
 .selected-temp:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  font-weight: 800;
 }
 
 #search-bar__wrapper {
