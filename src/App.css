@@ -136,10 +136,13 @@
 
 .current-condition-details > div {
   background-color: var(--secondary-color);
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
   margin: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .current-condition-details > div > div {
@@ -153,6 +156,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  .current-condition-details > div {
+    padding: 20px;
   }
 }
 
