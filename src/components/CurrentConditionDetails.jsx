@@ -1,4 +1,5 @@
-import { WiHumidity, WiStrongWind, WiThermometer } from "react-icons/wi";
+import { WiHumidity, WiThermometer } from "react-icons/wi";
+import { PiWindDuotone } from "react-icons/pi";
 import { AiFillEye } from "react-icons/ai";
 
 export default function CurrentConditionDetails({ data, tempUnit }) {
@@ -13,12 +14,12 @@ export default function CurrentConditionDetails({ data, tempUnit }) {
             {data.current.humidity}
           </div>
         </div>
-        <div className="pressure">
-          <p className="caption">Pressure</p>
+        <div className="wind-speed">
+          <p className="caption">Wind Speed</p>
           <div>
-            <WiStrongWind className="icon__highlights" />
-            {data.current.pressure_in}
-            <span className="unit">mb</span>
+            <PiWindDuotone className="icon__highlights" />
+            {data.current.wind_kph}
+            <span className="unit">kph</span>
           </div>
         </div>
         <div className="visibility">
