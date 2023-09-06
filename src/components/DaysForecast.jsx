@@ -4,7 +4,7 @@ import { daysOfWeek } from "../utils/dateData";
 export default function DaysForecast({ data, tempUnit }) {
   return (
     <div>
-      <p className="days-card__caption">10 Day Forecast</p>
+      <p className="days-card__caption">3 Days Forecast</p>
       <div className="days-card__container">
         {data.forecast.forecastday.map((day, idx) => {
           const date = new Date(day.date);
